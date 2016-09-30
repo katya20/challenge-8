@@ -6,3 +6,17 @@ readMessages(function(message) {
 listenForClear(function() {  
   $(".message-display").html("")
 })
+
+console.log("hi");
+var quantityInput = $(".element-quantity-input")
+
+quantityInput.keydown(function(e) {
+  var keyCode = e.keyCode;
+  var inputValue = quantityInput.val();
+  console.log ("hi");
+  // enter key!
+  if (keyCode == 13) {	
+    console.log("enter");
+    addElementsToThePage(inputValue);  
+  }
+})
