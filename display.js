@@ -18,6 +18,5 @@ quantityInput.keydown(function(e) {
   // enter key!
   if (keyCode == 13) {	
     console.log("enter")
-    addElementsToThePage(inputValue);  
   }
 })
