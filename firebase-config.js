@@ -10,7 +10,7 @@ var store = firebase.database().ref("challenge")
 
 function addMessage(message) {
   console.log("Adding message");
-  store.child("messages").push({message: "whyyy"})	
+  store.child("messages").push({message: message})	
 }
 
 function readMessages(callback) {
@@ -36,3 +36,17 @@ function listenForClear(onClear) {
     }
   })
 }
+
+console.log("hello")
+
+var quantityInput = $(".element-quantity-input")
+
+quantityInput.keydown(function(e) {
+  var keyCode = e.keyCode;
+  var inputValue = quantityInput.val();
+  console.log ("hi");
+  // enter key!
+  if (keyCode == 13) {	
+    console.log("enter")
+  }
+})
