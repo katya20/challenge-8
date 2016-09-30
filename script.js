@@ -1,1 +1,1 @@
-addMessage()
+addMessage("LOL");
