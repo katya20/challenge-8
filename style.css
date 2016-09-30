@@ -1,3 +1,11 @@
 #message {
   color: red;
 }
+
+.element-quantity-input {
+  margin-top: auto;
+  background-color: aqua;
+}
+.element-display {
+  margin-top: 1px;
+}
